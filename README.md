@@ -54,9 +54,6 @@ python -m pip install \
 ### 4. Install and prepare Ollama
 
 Install Ollama from [https://ollama.com](https://ollama.com). 
-```bash
-
-```
 
 Verify installation:
 ```bash

@@ -124,3 +124,4 @@ If you modify the PDF or want to rebuild the vector index:
 ```bash
 python pdf_chatbot.py /path/to/document.pdf --reindex
 ```
+---

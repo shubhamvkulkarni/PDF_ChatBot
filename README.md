@@ -27,7 +27,7 @@ Verify:
 ```bash
 python --version
 ```
-2. Install native dependencies (via conda)
+# 2. Install native dependencies (via conda)
 
 FAISS should be installed via conda-forge, not pip.
 ```bash

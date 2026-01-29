@@ -14,7 +14,7 @@ A simple PDF-based chatbot using **sentence-transformers** for embeddings, **FAI
 ---
 
 ## Instructions
-## 1. Create and activate a clean environment
+### 1. Create and activate a clean environment
 
 We recommend using **Miniforge / conda** and Python 3.11 for maximum compatibility.
 
@@ -27,7 +27,7 @@ Verify:
 ```bash
 python --version
 ```
-# 2. Install native dependencies (via conda)
+### 2. Install native dependencies (via conda)
 
 FAISS should be installed via conda-forge, not pip.
 ```bash
@@ -37,7 +37,7 @@ Optional sanity check:
 ```bash
 python -c "import faiss; print('FAISS OK')"
 ```
-## 3. Install Python packages (via pip)
+### 3. Install Python packages (via pip)
 
 Install the remaining Python-only dependencies using pip inside the conda environment:
 ```bash
@@ -51,7 +51,7 @@ python -m pip install \
   sentence-transformers \
   pypdf
 ```
-## 4. Install and prepare Ollama
+### 4. Install and prepare Ollama
 
 Install Ollama from:
 ```bash
@@ -75,7 +75,7 @@ ollama list
 
 Make sure the Ollama daemon is running before starting the chatbot.
 
-## 5. Embeddings cache location
+### 5. Embeddings cache location
 
 Sentence-transformers models are downloaded once and cached locally.
 
@@ -87,7 +87,7 @@ This project uses a hardcoded cache directory:
 The directory will be created automatically on the first run.
 Models are not re-downloaded on subsequent runs.
 
-## 6. Project structure
+### 6. Project structure
 
 Expected file layout:
 ```bash
@@ -97,7 +97,7 @@ pdf_chatbot/
 ├── embeddings.py         # sentence-transformers embeddings
 ├── README.md
 ```
-## 7. Running the chatbot
+### 7. Running the chatbot
 
 From the project directory:
 ```bash
@@ -118,7 +118,7 @@ Question:
 
 Type natural-language questions about the PDF content.
 
-## 8. Re-indexing (optional)
+### 8. Re-indexing (optional)
 
 If you modify the PDF or want to rebuild the vector index:
 ```bash
